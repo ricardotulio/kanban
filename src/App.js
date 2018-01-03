@@ -1,8 +1,9 @@
 import React from 'react'
+import Kanban from './pages/Kanban'
 import styles from './App.scss'
 
 const App = () => (
-  <h1 className={styles.title}>teste</h1>
+  <Kanban />
 )
 
 export default App
