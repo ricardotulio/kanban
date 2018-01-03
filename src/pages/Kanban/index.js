@@ -3,7 +3,7 @@
 import React, { Component } from 'react'
 import PageHeader from '../../components/PageHeader'
 import Board from '../../components/Board'
-import { append } from 'react'
+import { append } from 'ramda'
 
 class Kanban extends Component {
   constructor(props) {
@@ -29,15 +29,15 @@ class Kanban extends Component {
   }
 
   addColumn() {
-		const column = {
-      id: "412341",
-      title: "ckaljdralkjr",
+    const column = {
+      id: "chululul",
+      title: "Nova columna",
       cards: [],
-		}
+    }
 
-		const columns = append(column, this.state.columns)
+    const columns = append(column, this.state.columns)
 
-		this.setState({ columns })
+    this.setState({ columns })
   }
 
   render() {
