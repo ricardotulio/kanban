@@ -9,7 +9,12 @@ import styles from './Column.scss'
 const Column = (props) => (
   <div className={styles.column}>
     <ColumnTitle>{props.title}</ColumnTitle>
-    {map(card => <Card key={card.id} title={card.title} body={card.body} />, props.cards)}
+    {map(card =>
+      <Card
+        key={card.id}
+        title={card.title}
+        body={card.body} />,
+      props.cards)}
   </div>
 )
 
