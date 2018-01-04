@@ -1,14 +1,14 @@
 'use strict'
 
 import React from 'react'
-import ColumnTitle from '../ColumnTitle'
+import Title from '../../components/Title'
 import Card from '../Card'
 import { map } from 'ramda'
 import styles from './Column.scss'
 
 const Column = (props) => (
   <div className={styles.column}>
-    <ColumnTitle>{props.title}</ColumnTitle>
+    <Title size="2">{props.title}</Title>
     {map(card =>
       <Card
         key={card.id}

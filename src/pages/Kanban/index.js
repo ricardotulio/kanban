@@ -1,8 +1,8 @@
 'use strict'
 
 import React, { Component } from 'react'
-import PageHeader from '../../components/PageHeader'
-import Board from '../../components/Board'
+import Header from '../../containers/Header'
+import Board from '../../containers/Board'
 import { append } from 'ramda'
 
 class Kanban extends Component {
@@ -43,8 +43,8 @@ class Kanban extends Component {
   render() {
 	  return (
 			<div>
-				<PageHeader
-					icon="test"
+				<Header
+					icon="insert_chart"
 					pageTitle="test" />
 				<Board columns={this.state.columns} />
         <button onClick={this.addColumn}>Adicionar coluna</button>
